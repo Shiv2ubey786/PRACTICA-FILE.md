@@ -259,36 +259,36 @@
     	return 0;
     }
   ### 10. Write a C Program for function (using call by value).
-  #include <stdio.h>
+     #include <stdio.h>
  
  
-void swap(int, int);
+    void swap(int, int);
  
-int main()
-{
-   int x, y;
+    int main()
+    {
+     int x, y;
  
-   printf("Enter the value of x and y\n");
-   scanf("%d%d",&x,&y);
+     printf("Enter the value of x and y\n");
+     scanf("%d%d",&x,&y);
  
-   printf("Before Swapping\nx = %d\ny = %d\n", x, y);
+     printf("Before Swapping\nx = %d\ny = %d\n", x, y);
  
-   swap(x, y); 
+     swap(x, y); 
  
-   printf("After Swapping\nx = %d\ny = %d\n", x, y);
+     printf("After Swapping\nx = %d\ny = %d\n", x, y);
+  
+     return 0;
+    }
  
-   return 0;
-}
+    void swap(int a, int b)
+    {
+     int temp;
  
-void swap(int a, int b)
-{
-   int temp;
- 
-   temp = b;
-   b = a;
-   a = temp;
-    printf("Values of a and b is %d  %d\n",a,b);
-}
+       temp = b;
+     b = a;
+     a = temp;
+      printf("Values of a and b is %d  %d\n",a,b);
+    } 
 ### 11. Write a C Program for function (using call by reference).
     #include <stdio.h>
     void swap(int *n1, int *n2);
